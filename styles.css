@@ -1,0 +1,220 @@
+:root {
+  --noche: #15121c;
+  --noche-2: #221c2e;
+  --ambar: #f5a93a;
+  --rosa: #e8567f;
+  --crema: #f7efe3;
+  --suave: #b9aec6;
+  --display: "Alfa Slab One", Rockwell, "Rockwell Extra Bold", Georgia, serif;
+  --cuerpo: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--cuerpo);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--crema);
+  background: var(--noche);
+  padding-bottom: 4.5rem;
+}
+
+img, iframe, svg { max-width: 100%; }
+
+a { color: inherit; }
+
+:focus-visible { outline: 3px solid var(--ambar); outline-offset: 3px; }
+
+.saltar {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  background: var(--ambar);
+  color: var(--noche);
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  z-index: 20;
+}
+.saltar:focus { top: 0.5rem; }
+
+.contenedor { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.05; margin: 0; }
+
+.hero {
+  background:
+    radial-gradient(60rem 30rem at 85% 10%, rgba(232, 86, 127, 0.22), transparent 70%),
+    radial-gradient(50rem 28rem at 10% 90%, rgba(245, 169, 58, 0.14), transparent 70%),
+    var(--noche);
+}
+
+.hero__barra {
+  display: flex;
+  align-items: center;
+  width: min(100% - 2.5rem, 70rem);
+  margin-inline: auto;
+  padding-block: 1.1rem;
+}
+
+.hero__marca { font-family: var(--display); font-size: 1.15rem; color: var(--ambar); }
+
+.hero__nav { display: none; }
+
+.hero__cuerpo {
+  width: min(100% - 2.5rem, 70rem);
+  margin-inline: auto;
+  padding-block: 2rem 4.5rem;
+}
+
+.hero__tipo { margin: 0 0 1rem; font-weight: 500; color: var(--suave); }
+
+.hero h1 {
+  font-size: clamp(4rem, 22vw, 10rem);
+  color: var(--crema);
+  display: flex;
+  flex-direction: column;
+}
+.hero h1 .neon {
+  color: var(--ambar);
+  text-shadow: 0 0 0.2em rgba(245, 169, 58, 0.55), 0 0 0.7em rgba(245, 169, 58, 0.35);
+}
+
+.hero__lead { max-width: 30rem; font-size: 1.15rem; margin: 1.6rem 0 0; color: var(--crema); }
+
+.hero__acciones { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.8rem; }
+
+.boton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.boton--ambar { background: var(--ambar); color: var(--noche); }
+.boton--ambar:hover { background: var(--crema); }
+.boton--borde { border-color: var(--crema); color: var(--crema); }
+.boton--borde:hover { background: var(--crema); color: var(--noche); }
+
+.hero__nota { margin: 1.8rem 0 0; font-weight: 500; }
+.estrellas { color: var(--ambar); letter-spacing: 0.1em; margin-right: 0.3rem; }
+
+.seccion { padding-block: 3.5rem; }
+.seccion h2 { font-size: clamp(1.9rem, 6.5vw, 3rem); max-width: 22ch; }
+
+.ambiente { background: var(--ambar); color: var(--noche); }
+.ambiente h2 { color: var(--noche); }
+
+.ambiente__lista {
+  list-style: none;
+  margin: 2.2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.8rem;
+}
+.ambiente__lista li { border-top: 3px solid var(--noche); padding-top: 1rem; }
+.ambiente__lista h3 { font-size: 1.5rem; }
+.ambiente__lista p { margin: 0.5rem 0 0; font-weight: 500; max-width: 24rem; }
+
+.nota-global { margin: 0.8rem 0 0; font-size: 1.1rem; color: var(--suave); }
+.nota-global strong { font-family: var(--display); font-weight: 400; font-size: 2rem; color: var(--ambar); }
+
+.opiniones__lista {
+  list-style: none;
+  margin: 2.2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.2rem;
+}
+.opiniones__lista li {
+  background: var(--noche-2);
+  border-left: 4px solid var(--rosa);
+  border-radius: 0.3rem 1rem 1rem 0.3rem;
+  padding: 1.4rem 1.5rem;
+}
+.opiniones__lista blockquote { margin: 0; }
+.opiniones__lista blockquote p { margin: 0; font-size: 1.05rem; font-weight: 500; line-height: 1.5; }
+.autor { margin: 0.9rem 0 0; font-size: 0.9rem; color: var(--suave); }
+
+.visita { background: var(--noche-2); }
+
+.visita__rejilla { display: grid; gap: 2.5rem; }
+
+address { font-style: normal; margin-top: 1.4rem; }
+address p { margin: 0; }
+.dato-fuerte { font-weight: 700; font-size: 1.2rem; }
+
+.telefono {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--display);
+  font-size: clamp(2rem, 8.5vw, 2.8rem);
+  color: var(--ambar);
+  text-decoration: none;
+}
+.telefono:hover { text-decoration: underline; }
+
+.enlaces { margin: 1.6rem 0 0; font-weight: 700; }
+.enlaces a { color: var(--crema); text-underline-offset: 0.25em; }
+
+.visita__mapa iframe {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  border: 0;
+  border-radius: 1rem;
+  background: var(--noche);
+}
+
+.pie { background: var(--noche); color: var(--suave); padding-block: 1.8rem; font-size: 0.95rem; }
+.pie p { margin: 0; }
+
+.llamar-fijo {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.4rem;
+  border-radius: 0.6rem;
+  background: var(--ambar);
+  color: var(--noche);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 40rem) {
+  .hero__acciones { flex-direction: row; flex-wrap: wrap; }
+  .ambiente__lista { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .opiniones__lista { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 56rem) {
+  body { padding-bottom: 0; font-size: 1.0625rem; }
+  .llamar-fijo { display: none; }
+  .hero__nav { display: flex; gap: 2rem; margin-inline: auto 0; font-weight: 500; }
+  .hero__nav a { text-decoration: none; }
+  .hero__nav a:hover { color: var(--ambar); }
+  .hero__cuerpo { padding-block: 4rem 7rem; }
+  .hero h1 { flex-direction: row; flex-wrap: wrap; column-gap: 0.3em; font-size: clamp(6rem, 11vw, 10rem); }
+  .seccion { padding-block: 5.5rem; }
+  .ambiente__lista { grid-template-columns: repeat(4, 1fr); }
+  .opiniones__lista { grid-template-columns: repeat(4, 1fr); }
+  .visita__rejilla { grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
+  .visita__mapa iframe { height: 26rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
