@@ -3,85 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pub Trapos | Copas, música y buen ambiente en Castejón</title>
+<title>Pub Trapos | Buen ambiente y buena música en Castejón</title>
 <meta name="description" content="Pub Trapos en Castejón, Navarra: buen ambiente, buena música y un trato de los de casa. C. las Merindades, 10. Tel. 948 03 32 25.">
-<meta name="theme-color" content="#15121c">
+<meta name="theme-color" content="#1f3a6e">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="saltar" href="#opiniones">Saltar al contenido</a>
 
 <header class="hero">
-  <div class="hero__barra">
-    <span class="hero__marca">Pub Trapos</span>
-    <nav class="hero__nav" aria-label="Principal">
-      <a href="#ambiente">El pub</a>
-      <a href="#opiniones">Opiniones</a>
-      <a href="#visita">Ven a vernos</a>
-    </nav>
-  </div>
-  <div class="hero__cuerpo">
+  <div class="hero__tela">
     <p class="hero__tipo">Pub en Castejón, Navarra</p>
-    <h1>Pub<span class="neon">Trapos</span></h1>
+    <h1 aria-label="Pub Trapos">
+      <span class="pub" aria-hidden="true">Pub</span>
+      <span class="parches" aria-hidden="true">
+        <span class="parche parche--1">T</span>
+        <span class="parche parche--2">R</span>
+        <span class="parche parche--3">A</span>
+        <span class="parche parche--4">P</span>
+        <span class="parche parche--5">O</span>
+        <span class="parche parche--6">S</span>
+      </span>
+    </h1>
     <p class="hero__lead">Buen ambiente, buena música y un trato de los de casa. Pasa a tomar algo.</p>
     <div class="hero__acciones">
-      <a class="boton boton--ambar" href="tel:+34948033225">Llamar al 948 03 32 25</a>
+      <a class="boton boton--mostaza" href="tel:+34948033225">Llamar al 948 03 32 25</a>
       <a class="boton boton--borde" href="#visita">Cómo llegar</a>
     </div>
-    <p class="hero__nota"><span class="estrellas">★★★★★</span> 4,4 en Google, 55 reseñas</p>
   </div>
 </header>
 
 <main>
-  <section class="seccion ambiente" id="ambiente">
-    <div class="contenedor">
-      <h2>Un sitio para echar un buen rato</h2>
-      <ul class="ambiente__lista">
-        <li>
-          <h3>Ambiente acogedor</h3>
-          <p>Un local cómodo donde sentarse con amigos sin prisas.</p>
-        </li>
-        <li>
-          <h3>Buena música</h3>
-          <p>La banda sonora de la noche, para charlar o para animarse.</p>
-        </li>
-        <li>
-          <h3>Unas cervezas</h3>
-          <p>El plan de siempre en Castejón: unas cervezas y buena compañía.</p>
-        </li>
-        <li>
-          <h3>Trato cercano</h3>
-          <p>Atención amable y un dueño que te hace sentir como en casa.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <section class="seccion opiniones" id="opiniones">
     <div class="contenedor">
-      <h2>Lo que dicen en Google</h2>
-      <p class="nota-global"><strong>4,4</strong> de 5 con 55 reseñas</p>
-      <ul class="opiniones__lista">
-        <li>
+      <h2>Lo que dicen de nosotros</h2>
+      <p class="nota-global"><span class="nota-global__num">4,4</span> de 5 en Google, con 55 reseñas</p>
+      <ul class="retales">
+        <li class="retal retal--mostaza">
           <blockquote><p>Un pub acogedor con buen ambiente y buena música.</p></blockquote>
-          <p class="autor">Reseña en Google</p>
         </li>
-        <li>
+        <li class="retal retal--ladrillo">
           <blockquote><p>Excelente atención y trato, muy recomendable para echar un buen rato.</p></blockquote>
-          <p class="autor">Reseña en Google</p>
         </li>
-        <li>
+        <li class="retal retal--verde">
           <blockquote><p>Un buen lugar donde disfrutar tomando unas cervezas.</p></blockquote>
-          <p class="autor">Reseña en Google</p>
         </li>
-        <li>
+        <li class="retal retal--denim">
           <blockquote><p>El trato exquisito. Buen ambiente y muy a gusto. Dueño del local encantador.</p></blockquote>
-          <p class="autor">Reseña en Google</p>
         </li>
       </ul>
+      <p class="fuente">Opiniones de clientes en Google Maps.</p>
     </div>
   </section>
 
